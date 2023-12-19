@@ -2,6 +2,8 @@ import Image from "next/image"
 
 import styles from "../../styles/Pokemon.module.css"
 
+import { userRouter } from 'next/router'
+
 export const getStaticPaths = async() => {
 
     const maxPokemons = 250
@@ -19,7 +21,7 @@ export const getStaticPaths = async() => {
 
     return {
         paths,
-        fallback: false,
+        fallback: true,
     }
 }
 
@@ -37,6 +39,14 @@ export const getStaticProps = async (context) => {
 }
 
 export default function Pokemon({ pokemon }) {
+
+
+    const router = useRouter()
+
+    if(router.isFallback){
+        return <div>Pesquisando Pokémon...</div>
+    }
+
 
     const imageUrl = `https://raw.githubusercontent.com/wellrccity/pokedex-html-js/master/assets/img/pokemons/poke_${pokemon.id}.gif`
 
