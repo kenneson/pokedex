@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Card from '../components/Card'
 
 
@@ -27,6 +27,7 @@ export async function getStaticProps() {
 
 export default function Home( {pokemons} ) {
     return (<>
+     <SpeedInsights />
     <div className={styles.title_container}>
         <h1 className={styles.title}>Poke<span>Next</span></h1>
         <Image src="/images/pokeball.png"
