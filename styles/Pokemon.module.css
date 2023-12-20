@@ -9,7 +9,7 @@
     color: #fff;
     padding: 0.3em;
     margin: 0.8em auto;
-    width: 200px;
+    width: 30%;
   }
   
   .pokemon_container h3 {
@@ -111,6 +111,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 0.5em;
+    padding-bottom: 1.5em;
   }
   
   .data_container div {
@@ -124,4 +125,25 @@
   
   .data_height {
     border-right: 1px solid #ccc;
+  }
+
+  .buttons_container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+  }
+
+  .buttonPoke {
+    text-decoration: none;
+    background-color: #fff;
+    color: #222;
+    padding: 0.7em 1.2em;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+
+  .buttonPoke:hover {
+    background-color: #e33d33;
+    color: #fff;
   }

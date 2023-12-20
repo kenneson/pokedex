@@ -18,3 +18,12 @@
     text-decoration: none;
     font-weight: 700;
   }
+
+  @media (max-width: 420px) {
+    
+    .footer p {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }

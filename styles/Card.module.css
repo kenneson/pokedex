@@ -44,3 +44,26 @@
     background-color: #e33d33;
     color: #fff;
   }
+
+
+  @media (max-width: 570px) {
+
+    .card {
+      width: auto;
+    }
+
+    .card .title {
+      font-size: 0.8em;
+    }
+
+    .card .btn {
+      text-decoration: none;
+      background-color: #fff;
+      font-size: 0.7em;
+      color: #222;
+      padding: 0.7em 1.2em;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.4s;
+    } 
+}
